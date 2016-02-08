@@ -83,5 +83,15 @@ def get_models_between(start_year, end_year):
 
 # 1. What is the returned value and datatype of ``Brand.query.filter_by(name='Ford')``?
 
+# It is an object. We can set ``Brand.query.filter_by(name='Ford')``
+#to a value and call it to get a result or we
+#can specifiy ``Brand.query.filter_by(name='Ford')``
+# to .all(), .first(), .one() to get a result returned to us.
+
+
 # 2. In your own words, what is an association table, and what *type* of relationship
 # does an association table manage?
+
+#An association table manages a many to many relationship. The association
+#table provides a way to go between tables that hold foreign keys for other
+#tables.
